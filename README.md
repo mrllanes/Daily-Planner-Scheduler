@@ -7,3 +7,11 @@ ORGANIZATION is very crucial! If you are working on a project, taking a class, o
 Use this simple Day Planner to keep track of your day! You can enter and save things that you are planning for during the day, and you can also enter info as you are doing it. The planner will save your information after you hit the "save" button on the right side of the hour block. There is no time like the present to organize yourself for a more productive life!
 
 ## Screenshots
+
+See the following SCREENSHOTS to get an idea of what the Llanes Work Day Scheduler looks like:
+
+![Daily Planner Image 1](./Assets/images/image1.JPG)
+![Daily Planner Image 2](./Assets/images/image2.JPG)
+![Daily Planner Image 3](./Assets/images/image3.JPG)
+
+For more information, please contact Michael Llanes via e-mail: llanesm@gmail.com

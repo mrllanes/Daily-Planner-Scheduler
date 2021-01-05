@@ -14,16 +14,16 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(time, description);
 });
 
-
+// Code to determine if the Hour block is Current, past or future and formatting accordingly
 function updatedHour () {
-    var currentHour = dayjs().format('H');
-    console.log(currentHour);
+    var currentHour = dayjs().hour();
+    console.log(typeof currentHour);
     $('.time-block').each(function() {
-        var blockHour = parseInt($(this).attr("id"));
+        var blockHour = $(this).attr("id");
         console.log(blockHour);
         if (blockHour < currentHour) {
             $(this).addClass("past");
-        } else if (blockHour == currentHour) {
+        } else if (blockHour === currentHour) {
             $(this).removeClass("past");
             $(this).addClass("present");
         } else {
@@ -36,6 +36,8 @@ function updatedHour () {
 
 updatedHour ();
 
+
+// Displaying the local Storage (to keep it on the screen)
 $("#8 .description").val(localStorage.getItem("8"));
 $("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
