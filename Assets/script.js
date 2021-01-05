@@ -14,10 +14,10 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(time, description);
 });
 
-// Code to determine if the Hour block is Current, past or future and formatting accordingly
+// Code to determine if the Hour block is "current" or "past" or "future" and formatting accordingly
 function updatedHour () {
     var currentHour = dayjs().hour();
-    console.log(typeof currentHour);
+    // console.log(typeof currentHour);
     $('.time-block').each(function() {
         var blockHour = $(this).attr("id");
         console.log(blockHour);
